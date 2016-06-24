@@ -17,7 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.center = self.view.center;
+    button.bounds = CGRectMake(0, 0, 100, 100);
+    [button setBackgroundImage:[UIImage imageNamed:@"102"] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonclick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
+-(void)buttonclick:(UIButton*)sender{
+    
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
