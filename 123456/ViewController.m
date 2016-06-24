@@ -20,6 +20,7 @@
     UIView*view = [[UIView alloc]initWithFrame:self.view.frame];
     view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:view];
+    NSLog(@"%s",__FUNCTION__);
 }
 
 - (void)didReceiveMemoryWarning {
